@@ -1,0 +1,158 @@
+input[type=checkbox] {
+    position: relative;
+    cursor: pointer;
+    margin-right: 15px;
+}
+input[type=checkbox]:before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: 0;
+    left: 0;
+    border: 2px solid #555555;
+    border-radius: 3px;
+    background-color: white;
+}
+input[type=checkbox]:checked:after {
+    content: "";
+    display: block;
+    width: 5px;
+    height: 10px;
+    border: solid black;
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    position: absolute;
+    top: 2px;
+    left: 6px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+  }
+  
+  .custom-checkbox {
+    /* font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
+    display: block;
+    /* font-weight:900; */
+    font-size: 1rem;
+    margin-bottom: 5px;
+  }
+
+  textarea,
+  input[type="text"],
+  select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+
+.rdrDefinedRangesWrapper{
+  padding:0;
+  margin: 0;
+  box-sizing: border-box;
+  /* height: 30px; */
+  /* overflow: hidden; */
+  display: none;
+}
+
+
+/* Styling for the year input field */
+.year-input {
+  width: 100%; /* Adjust the width as needed */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  transition: border-color 0.2s ease-in-out;
+}
+
+.year-input:focus {
+  outline: none;
+  border-color: #007bff; /* Highlight border color on focus */
+}
+
+.uploaded-files {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.file-preview {
+  margin: 10px;
+  border: 1px solid #ccc;
+  padding: 5px;
+  width: 200px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.file-preview img,
+.file-preview video {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+}
+
+
+
+
+
+.logo-preview {
+  margin-top: 10px;
+  display: flex;
+  /* align-items: center; */
+  /* justify-content: center; */
+}
+
+.logo-preview img {
+  max-width: 200px;
+  max-height: 200px;
+}
+
+
+/* Adjust the styling of the time input specifically */
+.form-control[type="time"] {
+ 
+  padding: 10px 25px; /* Smaller padding for the time input */
+}
+
+
+
+
+
+
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+  .file-preview {
+    width: 150px;
+    height: 150px;
+  }
+
+  .logo-preview img {
+    max-width: 150px;
+    max-height: 150px;
+  }
+
+}
+
+/* Additional media queries for different breakpoints */
+@media (max-width: 480px) {
+  .file-preview {
+    width: 120px;
+    height: 120px;
+  }
+  .logo-preview img {
+    max-width: 120px;
+    max-height: 120px;
+  }
+}
